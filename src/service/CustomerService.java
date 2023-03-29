@@ -47,11 +47,9 @@ public class CustomerService implements ICustomerService {
                 int[] numUpdates = statement.executeBatch();
                 for (int i = 0; i < numUpdates.length; i++) {
                     if (numUpdates[i] == -2)
-                        System.out.println("Execution " + i +
-                                ": unknown number of rows updated");
+                        System.out.println("Execution " + i + " : unknown number of rows updated");
                     else {
-                        System.out.println("Execution " + i +
-                                "successful: " + numUpdates[i] + " rows updated");
+                        System.out.println("Data Insertion for " + i + " is successful: " + numUpdates[i] + " rows updated");
                         result = true;
                     }
                 }

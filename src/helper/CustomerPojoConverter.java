@@ -41,7 +41,7 @@ public class CustomerPojoConverter {
         }
 
         if (!customerList.isEmpty())
-            System.out.println("String to Pojo Conversion successful for " + customerList.size() + "Customers");
+            System.out.println("String to Pojo Conversion successful for " + customerList.size() + " Customers");
 
         return customerList;
     }
